@@ -33,7 +33,6 @@ export class CommentOnQuestionUseCase {
 
     if (!question) {
       return left(new ResourceNotFoundError())
-      throw new Error('Question not found.')
     }
 
     const questionComment = QuestionComment.create({
